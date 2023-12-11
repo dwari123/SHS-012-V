@@ -1,5 +1,9 @@
 Division As screen:
 
+    DivComp As Component1:
+        CurrentScreen: ="Administration"
+        Height: =768
+
     Main As groupContainer.verticalAutoLayoutContainer:
         DropShadow: =DropShadow.Regular
         Height: =App.Height-DivComp.ComHeaderHeight
@@ -8,7 +12,7 @@ Division As screen:
         Width: =App.Width-DivComp.VarMenuWidth
         X: =DivComp.VarMenuWidth
         Y: =DivComp.ComHeaderHeight
-        ZIndex: =1
+        ZIndex: =2
 
         Arrow1_4 As arrow.backArrow:
             Fill: =RGBA(0, 18, 107, 1)
@@ -41,6 +45,7 @@ Division As screen:
                     FillPortions: =1
                     FontWeight: =FontWeight.Bold
                     Height: =Parent.Height
+                    PaddingLeft: =35
                     Size: =20
                     Text: ="Division"
                     Y: =62
@@ -372,7 +377,7 @@ Division As screen:
         Width: =App.Width-DivComp.VarMenuWidth
         X: =DivComp.VarMenuWidth
         Y: =DivComp.ComHeaderHeight
-        ZIndex: =2
+        ZIndex: =3
 
         Container27_3 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -453,7 +458,7 @@ Division As screen:
         Width: =App.Width-DivComp.VarMenuWidth
         X: =DivComp.VarMenuWidth
         Y: =DivComp.ComHeaderHeight
-        ZIndex: =3
+        ZIndex: =4
 
         Container27_1 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -1131,7 +1136,7 @@ Division As screen:
         Width: =App.Width-DivComp.VarMenuWidth
         X: =DivComp.VarMenuWidth
         Y: =DivComp.ComHeaderHeight
-        ZIndex: =4
+        ZIndex: =5
 
         Container27_2 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -1817,7 +1822,7 @@ Division As screen:
         Width: =App.Width-DivComp.VarMenuWidth
         X: =DivComp.VarMenuWidth
         Y: =DivComp.ComHeaderHeight
-        ZIndex: =5
+        ZIndex: =6
 
         Container27_37 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -1957,9 +1962,4 @@ Division As screen:
                         =UpdateContext({AddFactor:false})
                     Text: ="Cancel"
                     ZIndex: =2
-
-    DivComp As Component1:
-        CurrentScreen: ="Administration"
-        Height: =768
-        ZIndex: =6
 
