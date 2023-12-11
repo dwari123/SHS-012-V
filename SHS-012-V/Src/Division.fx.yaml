@@ -82,8 +82,8 @@ Division As screen:
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
                         Width: =241
-                        X: =9
-                        Y: =21
+                        X: =150
+                        Y: =17
                         ZIndex: =1
 
                     Icon28_18 As icon.Search:
@@ -92,8 +92,8 @@ Division As screen:
                         OnSelect: =Set(search_name,TextInput1_2.Text)
                         Visible: =If(IsBlank(TextInput1_2.Text),true,false)
                         Width: =30
-                        X: =200
-                        Y: =21
+                        X: =336
+                        Y: =14
                         ZIndex: =2
 
                     Icon28_19 As icon.Cancel:
