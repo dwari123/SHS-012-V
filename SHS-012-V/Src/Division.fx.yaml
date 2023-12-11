@@ -1,9 +1,5 @@
 Division As screen:
 
-    DivComp As Component1:
-        CurrentScreen: ="Administration"
-        Height: =768
-
     Main As groupContainer.verticalAutoLayoutContainer:
         DropShadow: =DropShadow.Regular
         Height: =App.Height-DivComp.ComHeaderHeight
@@ -12,7 +8,7 @@ Division As screen:
         Width: =App.Width-DivComp.VarMenuWidth
         X: =DivComp.VarMenuWidth
         Y: =DivComp.ComHeaderHeight
-        ZIndex: =21
+        ZIndex: =1
 
         Arrow1_4 As arrow.backArrow:
             Fill: =RGBA(0, 18, 107, 1)
@@ -376,7 +372,7 @@ Division As screen:
         Width: =App.Width-DivComp.VarMenuWidth
         X: =DivComp.VarMenuWidth
         Y: =DivComp.ComHeaderHeight
-        ZIndex: =22
+        ZIndex: =2
 
         Container27_3 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -457,7 +453,7 @@ Division As screen:
         Width: =App.Width-DivComp.VarMenuWidth
         X: =DivComp.VarMenuWidth
         Y: =DivComp.ComHeaderHeight
-        ZIndex: =23
+        ZIndex: =3
 
         Container27_1 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -1135,7 +1131,7 @@ Division As screen:
         Width: =App.Width-DivComp.VarMenuWidth
         X: =DivComp.VarMenuWidth
         Y: =DivComp.ComHeaderHeight
-        ZIndex: =24
+        ZIndex: =4
 
         Container27_2 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -1821,7 +1817,7 @@ Division As screen:
         Width: =App.Width-DivComp.VarMenuWidth
         X: =DivComp.VarMenuWidth
         Y: =DivComp.ComHeaderHeight
-        ZIndex: =25
+        ZIndex: =5
 
         Container27_37 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -1961,4 +1957,9 @@ Division As screen:
                         =UpdateContext({AddFactor:false})
                     Text: ="Cancel"
                     ZIndex: =2
+
+    DivComp As Component1:
+        CurrentScreen: ="Administration"
+        Height: =768
+        ZIndex: =6
 
