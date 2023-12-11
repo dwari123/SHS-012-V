@@ -2035,7 +2035,7 @@
             "Rules": [
               {
                 "Category": "Design",
-                "InvariantScript": "RGBA(0, 0, 0, 0)",
+                "InvariantScript": "If(ThisItem.IsSelected,Color.AliceBlue,RGBA(0, 0, 0, 0))",
                 "Property": "TemplateFill",
                 "RuleProviderType": "Unknown"
               },
@@ -2643,7 +2643,14 @@
                 "Children": [],
                 "ControlPropertyState": [
                   "ItemAccessibleLabel",
-                  "TemplateFill",
+                  {
+                    "AFDDataSourceName": "",
+                    "AutoRuleBindingEnabled": false,
+                    "AutoRuleBindingString": "RGBA(0, 0, 0, 0)",
+                    "InvariantPropertyName": "TemplateFill",
+                    "IsLockable": false,
+                    "NameMapSourceSchema": "?"
+                  },
                   "OnSelect"
                 ],
                 "ControlUniqueId": "68",
@@ -2670,7 +2677,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "RGBA(0, 0, 0, 0)",
+                    "InvariantScript": "If(ThisItem.IsSelected,Color.HotPink,RGBA(0, 0, 0, 0))",
                     "Property": "TemplateFill",
                     "RuleProviderType": "Unknown"
                   },
@@ -4470,7 +4477,7 @@
       },
       "LoginNameMenu"
     ],
-    "LastModifiedTimestamp": "638378856855800788",
+    "LastModifiedTimestamp": "638378861433890099",
     "Name": "Component1",
     "Rules": [
       {
@@ -4680,7 +4687,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638378856855800788",
+  "LastModifiedTimestamp": "638378861433890099",
   "Name": "415e1786c3c94354acf26afaf63ccb82",
   "OverridableProperties": {},
   "Version": "638327128456687156"

@@ -379,6 +379,7 @@ Component1 As CanvasComponent:
         OnSelect: |-
             =Set(VarExpandMeu,!VarExpandMeu);
             Navigate(ThisItem.TargetScreen,Transition.None);
+        TemplateFill: =If(ThisItem.IsSelected,Color.AliceBlue,RGBA(0, 0, 0, 0))
         TemplateSize: =280
         Width: =If(ShowMenu,App.Width/5,0)
         Y: =Container1.Height
@@ -432,6 +433,7 @@ Component1 As CanvasComponent:
             OnSelect: |-
                 =
                 Navigate(ThisItem.TargetScreen,Transition.None);
+            TemplateFill: =If(ThisItem.IsSelected,Color.HotPink,RGBA(0, 0, 0, 0))
             TemplateSize: =280
             Visible: =If(ThisItem.Title=MainMenu.Selected.Title,!VarExpandMeu)
             Width: =If(ShowMenu,App.Width/5,0)
