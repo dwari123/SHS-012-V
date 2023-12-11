@@ -92,18 +92,18 @@ Division As screen:
                         OnSelect: =Set(search_name,TextInput1_2.Text)
                         Visible: =If(IsBlank(TextInput1_2.Text),true,false)
                         Width: =30
-                        X: =336
-                        Y: =14
+                        X: =361
+                        Y: =17
                         ZIndex: =2
 
                     Icon28_19 As icon.Cancel:
-                        Height: =27
+                        Height: =40
                         Icon: =Icon.Cancel
                         OnSelect: =Set(search_name,"");Reset(TextInput1_2)
                         Visible: =If(IsBlank(TextInput1_2.Text),false,true)
                         Width: =28
-                        X: =202
-                        Y: =27
+                        X: =361
+                        Y: =17
                         ZIndex: =3
 
                 Container6 As groupContainer.manualLayoutContainer:
